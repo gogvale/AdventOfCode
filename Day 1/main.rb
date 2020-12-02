@@ -3,19 +3,23 @@ file = File.open("../files/input_day01.txt")
 input = file.readlines.map{|line| line.chomp.to_i}
 
 
-# Challenge 1
-input.each_with_index do |value,idx|
-    input[idx..-1].each{|i| puts value*i if value + i == sum}
+def challenge_1(input,sum)
+    input.each_with_index do |value,idx|
+        input[idx..].each do |i| 
+            return value * i if value + i == sum
+        end
+    end
 end
 
-# Challenge 2
-input.each_with_index do |value,idx|
-    input[idx..-1].each_with_index do |value_2, idx_2|
-        input[idx_2..-1].each do |value_3| 
-            if value + value_2 + value_3 == sum
-                puts value*value_2*value_3
-                return
+def challenge_2(input,sum)
+    input.each_with_index do |value,idx|
+        input[idx..].each_with_index do |value2, idx2|
+            input[idx2..].each do |value3| 
+                return value * value2 * value3 if value + value2 + value3 == sum
             end
         end
     end
 end
+
+puts challenge_1(input,sum)
+puts challenge_2(input,sum)
