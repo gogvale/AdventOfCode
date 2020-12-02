@@ -1,5 +1,5 @@
 sum = 2020
-file = File.open("../files/input_day01.txt")
+file = File.open("input.txt")
 input = file.readlines.map{|line| line.chomp.to_i}
 
 
