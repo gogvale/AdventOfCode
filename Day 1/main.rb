@@ -5,8 +5,8 @@ input = file.readlines.map{|line| line.chomp.to_i}
 
 def challenge_1(input,sum)
     input.each_with_index do |value,idx|
-        input[idx..].each do |i| 
-            return value * i if value + i == sum
+        input[idx..].each do |value2| 
+            return value * value2 if value + value2 == sum
         end
     end
 end
