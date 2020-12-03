@@ -3,8 +3,8 @@ input = File.open("input.txt").readlines.map{|line| line.chomp}
 def slope_trees(right,below,input)
     current = 0
     total_trees = 0
-    
-    input[1..].each_slice(below) do |i, _ |
+    input.each_with_index do |i,idx|
+        next if idx % below != 0 or idx == 0
         current += right
         total_trees += 1 if i[current%i.size] == "#"
     end
