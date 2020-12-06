@@ -9,18 +9,18 @@ i = input.map do |i|
     end
 end
 
-any =  i.join("").split("$").map {|i| i.split("").uniq.join.length }.sum()
-all =  i.join(" ").split("$").map{|i| i.strip.split.uniq}
+any =  i.join("")
+        .split("$")
+        .map {|i| i.split("").uniq.join.length }
+        .sum()
 
-all = all.map do |i|
-    if i.length == 1
-        i.first.length 
-    else
-        chars = i.join.split("").uniq
-        chars.map{|char|  i.map {|i| i.include? char}.reduce(&:&) }.count(true)
-    end
-end
-all = all.sum()
+all =  i.join(" ")
+        .split("$")
+        .map{|i| i.strip.split.uniq}
+        .map{ |i| i.join.split("").uniq
+        .map{|char|  i.map {|i| i.include? char}.reduce(&:&) }
+        .count(true) }
+        .sum()
 
 puts any
 puts all
