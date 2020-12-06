@@ -2,12 +2,12 @@
 
 |Day|Name|Solution|Status|
 |---|---|---|---|
-|[01](https://adventofcode.com/2020/day/1)|Report Repair|[view](/2020/Day\ 1/main.rb)|⭐ ⭐|
-|[02](https://adventofcode.com/2020/day/2)|Password Philosophy|[view](/2020/Day\ 2/main.rb)|⭐ ⭐|
-|[03](https://adventofcode.com/2020/day/3)|Toboggan Trajectory|[view](/2020/Day\ 3/main.rb)|⭐ ⭐|
+|[01](https://adventofcode.com/2020/day/1)|Report Repair|[view](/2020/Day%201/main.rb)|⭐ ⭐|
+|[02](https://adventofcode.com/2020/day/2)|Password Philosophy|[view](/2020/Day%202/main.rb)|⭐ ⭐|
+|[03](https://adventofcode.com/2020/day/3)|Toboggan Trajectory|[view](/2020/Day%203/main.rb)|⭐ ⭐|
 |[04](https://adventofcode.com/2020/day/4)|Passport Processing|[view]()||
 |[05](https://adventofcode.com/2020/day/5)|Binary Boarding|[view]()||
-|[06](https://adventofcode.com/2020/day/6)|Custom Customs|[view](/2020/Day\ 6/main.rb)|⭐ ⭐|
+|[06](https://adventofcode.com/2020/day/6)|Custom Customs|[view](/2020/Day%206/main.rb)|⭐ ⭐|
 |[07](https://adventofcode.com/2020/day/7)|-|-||
 |[08](https://adventofcode.com/2020/day/8)|-|-||
 |[09](https://adventofcode.com/2020/day/9)|-|-||
