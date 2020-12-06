@@ -1,12 +1,6 @@
 input = File.open("input.txt").readlines.map(&:chomp)
 
-i = input.map do |i|
-    if i.empty?
-        "$"
-    else
-        i
-    end
-end
+i = input.map { |i| i.empty? ? "$" : i }
 
 any =  i.join("")
         .split("$")
