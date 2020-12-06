@@ -1,4 +1,3 @@
-require 'pry'
 input = File.open("input.txt").readlines.map(&:chomp)
 
 i = input.map do |i|
