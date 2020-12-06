@@ -15,5 +15,5 @@ all =  i.join(" ")
         .count(true) }
         .sum()
 
-puts any
-puts all
+puts any # 6947
+puts all # 3398
