@@ -5,7 +5,7 @@
 |[01](https://adventofcode.com/2020/day/1)|Report Repair|[view](/2020/Day%201/main.rb)|⭐ ⭐|
 |[02](https://adventofcode.com/2020/day/2)|Password Philosophy|[view](/2020/Day%202/main.rb)|⭐ ⭐|
 |[03](https://adventofcode.com/2020/day/3)|Toboggan Trajectory|[view](/2020/Day%203/main.rb)|⭐ ⭐|
-|[04](https://adventofcode.com/2020/day/4)|Passport Processing|-||
+|[04](https://adventofcode.com/2020/day/4)|Passport Processing|/2020/Day%204/main.rb|⭐ ⭐|
 |[05](https://adventofcode.com/2020/day/5)|Binary Boarding|-||
 |[06](https://adventofcode.com/2020/day/6)|Custom Customs|[view](/2020/Day%206/main.rb)|⭐ ⭐|
 |[07](https://adventofcode.com/2020/day/7)|-|-||
