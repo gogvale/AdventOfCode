@@ -5,11 +5,11 @@
 |[01](https://adventofcode.com/2020/day/1)|Report Repair|[view](/2020/Day%201/main.rb)|⭐ ⭐|
 |[02](https://adventofcode.com/2020/day/2)|Password Philosophy|[view](/2020/Day%202/main.rb)|⭐ ⭐|
 |[03](https://adventofcode.com/2020/day/3)|Toboggan Trajectory|[view](/2020/Day%203/main.rb)|⭐ ⭐|
-|[04](https://adventofcode.com/2020/day/4)|Passport Processing|/2020/Day%204/main.rb|⭐ ⭐|
-|[05](https://adventofcode.com/2020/day/5)|Binary Boarding|-||
+|[04](https://adventofcode.com/2020/day/4)|Passport Processing|[view](/2020/Day%204/main.rb)|⭐ ⭐|
+|[05](https://adventofcode.com/2020/day/5)|Binary Boarding|[view](/2020/Day%205/main.rb)|⭐|
 |[06](https://adventofcode.com/2020/day/6)|Custom Customs|[view](/2020/Day%206/main.rb)|⭐ ⭐|
-|[07](https://adventofcode.com/2020/day/7)|-|-||
-|[08](https://adventofcode.com/2020/day/8)|-|-||
+|[07](https://adventofcode.com/2020/day/7)|Handy Haversacks|-||
+|[08](https://adventofcode.com/2020/day/8)|Handheld Halting|[view](/2020/Day%208/main.rb)|⭐|
 |[09](https://adventofcode.com/2020/day/9)|-|-||
 |[10](https://adventofcode.com/2020/day/10)|-|-||
 |[11](https://adventofcode.com/2020/day/11)|-|-||
