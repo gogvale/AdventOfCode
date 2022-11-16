@@ -1,28 +1,25 @@
-values = File.open('input.txt', 'r').to_a.map { _1.chomp.to_i }
-@index = 25
+def get_invalid(index: 25)
+  until index == @values.size
+    invalid = @values[index]
+    return invalid unless @values[index - 25..index].permutation(2).map(&:sum).include?(invalid)
 
-until @index == values.size
-  preamble = values[@index - 25..@index]
-  value = values[@index]
-  @invalid = value
-  unless preamble.permutation(2).map(&:sum).include?(value)
-    puts @invalid
-    break
+    index += 1
   end
-
-  @index += 1
 end
 
-(0..values.length).each do |i|
-  (1..values.length).each do |j|
-    next unless j - i > 1
+def get_sum(invalid:)
+  (0..@values.length).each do |i|
+    (1..@values.length).each do |j|
+      next unless j - i > 1
 
-    inner_values = values[i..j]
-    if inner_values.sum == @invalid
-      puts inner_values.min + inner_values.max
-      break
+      inner_values = @values[i..j]
+      return inner_values.min + inner_values.max if inner_values.sum == invalid
     end
   end
 end
 
-
+@values = File.open('input.txt', 'r').to_a.map { _1.chomp.to_i }
+invalid = get_invalid
+sum = get_sum(invalid: invalid)
+puts invalid
+puts sum
