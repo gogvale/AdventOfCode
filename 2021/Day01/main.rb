@@ -1,4 +1,4 @@
-@values = File.open("#{File.dirname(__FILE__)}/input.txt", 'r').to_a.map { _1.chomp.to_i }
+@values = File.open("#{File.dirname(__FILE__)}/input.txt", 'r').to_a.map { _1.to_i }
 
 def changed(values)
   values.select.with_index { |i, idx| i > values[idx - 1] }.size
