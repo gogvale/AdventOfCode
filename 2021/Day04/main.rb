@@ -53,8 +53,7 @@ boards_length = boards.length
 draws.each do |draw|
   modified_boards = boards.each { _1.check_for_number(draw) }.select(&:modified?)
   modified_boards.select(&:finished?).each do |board|
-    score = board.sum_unchecked * draw.to_i
-    puts score if [1, boards_length].include?(boards.length)
+    puts board.sum_unchecked * draw.to_i if [1, boards_length].include?(boards.length)
 
     boards.delete(board)
   end
