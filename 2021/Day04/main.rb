@@ -23,10 +23,7 @@ class Board
   def finished?
     return false if @checks.size < LENGTH
 
-    values = @checks.values
-    rows, columns = values.transpose
-    rows.uniq.any? { rows.count(_1) == LENGTH } ||
-      columns.uniq.any? { columns.count(_1) == LENGTH }
+    @checks.values.transpose.any? { |i| i.uniq.any? { i.count(_1) == LENGTH } }
   end
 
   def sum_unchecked
