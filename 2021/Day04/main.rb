@@ -26,9 +26,7 @@ class Board
     values = @checks.values
     rows, columns = values.transpose
     rows.uniq.any? { rows.count(_1) == LENGTH } ||
-      columns.uniq.any? { columns.count(_1) == LENGTH } #||
-      # ((0..4).map { [_1, _1] }.to_a & values).length == LENGTH ||
-      # ([[0, 4], [1, 3], [2, 2], [3, 1], [4, 0]] & values).length == LENGTH
+      columns.uniq.any? { columns.count(_1) == LENGTH }
   end
 
   def sum_unchecked
@@ -50,17 +48,15 @@ end
 
 @values = File.open("#{File.dirname(__FILE__)}/input.txt", 'r').to_a.map { _1.chomp }
 draws = @values.first.split(',')
-boards = (2..@values.length).step(6).map { @values[_1.._1 + 4].map(&:split) }.map { Board.new(_1) }
+boards = (2..@values.length).step(6).map { Board.new(@values[_1.._1 + 4].map(&:split)) }
+boards_length = boards.length
 draws.each do |draw|
   modified_boards = boards.each { _1.check_for_number(draw) }.select(&:modified?)
-  finished_board = modified_boards.select(&:finished?)
-  if finished_board.any?
-    @winning_board = finished_board.first
-    @last_draw = draw
-    break
-  else
-    modified_boards.each(&:reset!)
-  end
-end
+  modified_boards.select(&:finished?).each do |board|
+    score = board.sum_unchecked * draw.to_i
+    puts score if [1, boards_length].include?(boards.length)
 
-puts @winning_board.sum_unchecked * @last_draw.to_i
+    boards.delete(board)
+  end
+  boards.empty? ? break : modified_boards.each(&:reset!)
+end
