@@ -1,62 +1,17 @@
-# frozen_string_literal: true
-opponent_hash = {
-  "A" => :rock,
-  "B" => :paper,
-  "C" => :scissors
-}
-
-your_hash = {
-  "X" => :rock,
-  "Y" => :paper,
-  "Z" => :scissors
-}
-your_correct_hash = {
-  "X" => :lose,
-  "Y" => :draw,
-  "Z" => :win
+@logic = { # Lose, Draw, Win, Score
+           "X" => ["B", "A", "C", 1],
+           "Y" => ["C", "B", "A", 2],
+           "Z" => ["A", "C", "B", 3],
 }
 
 def get_guess(opponent, outcome)
-  return opponent if outcome == :draw
-
-  case opponent
-  when :rock
-    outcome == :win ? :paper : :scissors
-  when :paper
-    outcome == :win ? :scissors : :rock
-  when :scissors
-    outcome == :win ? :rock : :paper
-  end
+  @logic.find { _2[["X", "Y", "Z"].index(outcome)] == opponent }.first
 end
 
 def result(opponent, you)
-  initial_score = { rock: 1, paper: 2, scissors: 3 }[you]
-  return initial_score + 3 if opponent == you
-
-  initial_score + case opponent
-                  when :rock
-                    you == :paper ? 6 : 0
-                  when :paper
-                    you == :scissors ? 6 : 0
-                  when :scissors
-                    you == :rock ? 6 : 0
-                  end
-end
-
-def second_result(opponent, you)
-  initial_score = { rock: 1, paper: 2, scissors: 3 }[you]
-  return initial_score + 3 if opponent == you
-
-  initial_score + case opponent
-                  when :rock
-                    you == :paper ? 6 : 0
-                  when :paper
-                    you == :scissors ? 6 : 0
-                  when :scissors
-                    you == :rock ? 6 : 0
-                  end
+  @logic[you][-1] + 3 * @logic[you].index(opponent)
 end
 
 @values = File.open("#{File.dirname(__FILE__)}/input.txt", 'r').to_a.map(&:split)
-puts @values.map { result(opponent_hash[_1], your_hash[_2]) }.sum
-puts @values.map { result(opponent_hash[_1], get_guess(opponent_hash[_1], your_correct_hash[_2])) }.sum
+puts @values.sum { result(_1, _2) }
+puts @values.sum { result(_1, get_guess(_1, _2)) }
