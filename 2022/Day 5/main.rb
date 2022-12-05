@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-values, instructions = File.open("#{File.dirname(__FILE__)}/input.txt").read.split("\n\n").map{_1.split("\n")}
+values, instructions = File.read("#{File.dirname(__FILE__)}/input.txt")
+                           .split("\n\n")
+                           .map { _1.split("\n") }
 silver = values.each_with_object([]) do |value, arr|
   arr << value.chars.each_slice(4).to_a.map(&:join).map do
     _1.scan(/\[(.)\]/).first&.first
