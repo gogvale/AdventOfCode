@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-@values = File.open("#{File.dirname(__FILE__)}/input.txt", 'r').to_a.map do |str|
+@values = File.open("#{File.dirname(__FILE__)}/input.txt").map do |str|
   str.split(',').map { Range.new(*_1.split('-').map(&:to_i)).to_a }
 end
 
