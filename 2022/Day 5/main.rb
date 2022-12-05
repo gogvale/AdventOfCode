@@ -15,15 +15,12 @@ def parse_instruction(instruction)
   instruction.scan(/(\d+)/).map(&:first).map(&:to_i)
 end
 
-silver = instructions.each_with_object(crates.map(&:dup)) do |instruction, crates|
+puts (instructions.each_with_object(crates.map(&:dup)) do |instruction, crates|
   number, from, to = parse_instruction(instruction)
   number.times { crates[to - 1] << crates[from - 1].pop }
-end.map { _1.last }.join
+end.map { _1.last }.join)
 
-gold = instructions.each_with_object(crates.map(&:dup)) do |instruction, crates|
+puts (instructions.each_with_object(crates.map(&:dup)) do |instruction, crates|
   number, from, to = parse_instruction(instruction)
   crates[to - 1] += crates[from - 1].pop(number)
-end.map { _1.last }.join
-
-puts silver
-puts gold
+end.map { _1.last }.join)
