@@ -7,7 +7,7 @@
 | [03](https://adventofcode.com/2022/day/3)  | Rucksack Reorganization | [view](/2022/Day%203/main.rb)  | ⭐⭐     |                                                                                 
 | [04](https://adventofcode.com/2022/day/4)  | Camp Cleanup            | [view](/2022/Day%204/main.rb)  | ⭐⭐     |                                                                                 
 | [05](https://adventofcode.com/2022/day/5)  | Supply Stacks           | [view](/2022/Day%205/main.rb)  | ⭐⭐     |                                                                                 
-| [06](https://adventofcode.com/2022/day/6)  | Lorem Ipsum             | [view](/2022/Day%206/main.rb)  | ✩      |                                                                                 
+| [06](https://adventofcode.com/2022/day/6)  | Tuning Trouble          | [view](/2022/Day%206/main.rb)  | ⭐⭐     |                                                                                 
 | [07](https://adventofcode.com/2022/day/7)  | Lorem Ipsum             | [view](/2022/Day%207/main.rb)  | ✩      |                                                                                 
 | [08](https://adventofcode.com/2022/day/8)  | Lorem Ipsum             | [view](/2022/Day%208/main.rb)  | ✩      |                                                                                 
 | [09](https://adventofcode.com/2022/day/9)  | Lorem Ipsum             | [view](/2022/Day%209/main.rb)  | ✩      |                                                                                 
