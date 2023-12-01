@@ -1,4 +1,5 @@
 .template*
 *.py
 answer.rb
-.idea
+input.txt
+sample.txt
