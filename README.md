@@ -4,7 +4,7 @@
 |--------------------------------------------|----------------|---------------------|--------|
 | [01](https://adventofcode.com/2023/day/1)  | Trebuchet?!    | [view](/2023/01.rb) | ⭐⭐     |
 | [02](https://adventofcode.com/2023/day/2)  | Cube Conundrum | [view](/2023/02.rb) | ⭐⭐     |                                                                                 
-| [03](https://adventofcode.com/2023/day/3)  | Lorem Ipsum    | [view](/2023/03.rb) | ✩      |                                                                                 
+| [03](https://adventofcode.com/2023/day/3)  | Gear Ratios    | [view](/2023/03.rb) | ⭐⭐     |                                                                                 
 | [04](https://adventofcode.com/2023/day/4)  | Lorem Ipsum    | [view](/2023/04.rb) | ✩      |                                                                                 
 | [05](https://adventofcode.com/2023/day/5)  | Lorem Ipsum    | [view](/2023/05.rb) | ✩      |                                                                                 
 | [06](https://adventofcode.com/2023/day/6)  | Lorem Ipsum    | [view](/2023/06.rb) | ✩      |                                                                                 
