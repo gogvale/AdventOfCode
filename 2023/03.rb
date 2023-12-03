@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 input = IO.readlines("#{File.dirname(__FILE__)}/input.txt", chomp: true)
-# Scan all numbers and save to numbers table with all coordinates
+
 numbers = input.each_with_index.map do |line, index|
   line.to_enum(:scan, /\d+/).map do |m,|
     inner_index = $`.size
     { value: m, coordinates: (0...m.size).map { |i| [index, i + inner_index] } }
   end
 end.flatten
-# def max_height and max_width
+
 $max_height = input.size
 $max_width = input.first.size
 
@@ -27,9 +27,9 @@ def get_box(coord)
   end
 end
 
-# silver:
 silver_symbols = []
 gold_symbols = []
+
 input.each_with_index.map do |line, index|
   line.to_enum(:scan, /[^.\d]/).map do |m,|
     inner_index = $`.size
@@ -49,6 +49,5 @@ silver = numbers.filter_map do |el|
   el[:value].to_i if el[:coordinates].any? { silver_symbols.include? _1 }
 end.sum
 gold = gold_symbols.sum
+
 puts silver, gold
-#   scan all symbols, get boxes and save all to silver_symbols array
-#   sum all numbers containing cordinates in array_symbols
