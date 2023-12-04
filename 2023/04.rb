@@ -6,10 +6,9 @@ end
 silver = input.sum { (2 ** ((_1 & _2).size - 1)).to_i }
 scratchcards = (1..input.size).map { [_1, 1] }.to_h
 input.each_with_index do |line, i|
-  mine, winning = line
-  matching = (mine & winning).size
-  (i + 2..matching + i + 1).each {|j| scratchcards[j] += scratchcards[i+1] if scratchcards.keys.include? j }
-  scratchcards
+  (i + 2..line.reduce(:&).size + i + 1).each do |j|
+    scratchcards[j] += scratchcards[i + 1] if scratchcards.keys.include? j
+  end
 end
 gold = scratchcards.values.sum
 puts silver, gold
