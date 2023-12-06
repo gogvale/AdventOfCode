@@ -39,12 +39,12 @@ silver = seeds.map do |seed|
 end.min
 
 almanac.reverse!
-ranges = seeds.each_slice(2).map { Range.new(_1, _1 + _2 - 1) }
+ranges = seeds.each_slice(2).map { (_1.._1 + _2) }
 gold = (0..nil).find do |location|
   almanac.each do |values|
     location = find_previous(values, location)
   end
   ranges.any? { _1.include? location }
-end
+end - 1
 
 puts silver, gold
