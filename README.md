@@ -8,7 +8,7 @@
 | [04](https://adventofcode.com/2023/day/4)  | Scratchcards                   | [view](/2023/04.rb) | ⭐⭐     |                                                                                 
 | [05](https://adventofcode.com/2023/day/5)  | If You Give A Seed A Fertilize | [view](/2023/05.rb) | ⭐⭐     |                                                                                 
 | [06](https://adventofcode.com/2023/day/6)  | Wait For It                    | [view](/2023/06.rb) | ⭐⭐     |                                                                                 
-| [07](https://adventofcode.com/2023/day/7)  | Lorem Ipsum                    | [view](/2023/07.rb) | ✩      |                                                                                 
+| [07](https://adventofcode.com/2023/day/7)  | Camel Cards                    | [view](/2023/07.rb) | ⭐✩     |                                                                                 
 | [08](https://adventofcode.com/2023/day/8)  | Lorem Ipsum                    | [view](/2023/08.rb) | ✩      |                                                                                 
 | [09](https://adventofcode.com/2023/day/9)  | Lorem Ipsum                    | [view](/2023/09.rb) | ✩      |                                                                                 
 | [10](https://adventofcode.com/2023/day/10) | Lorem Ipsum                    | [view](/2023/10.rb) | ✩      |                                                                                
