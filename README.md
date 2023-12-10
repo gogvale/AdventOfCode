@@ -10,7 +10,7 @@
 | [06](https://adventofcode.com/2023/day/6)  | Wait For It                    | [view](/2023/06.rb) | ⭐⭐     |                                                                                 
 | [07](https://adventofcode.com/2023/day/7)  | Camel Cards                    | [view](/2023/07.rb) | ⭐      |                                                                                 
 | [08](https://adventofcode.com/2023/day/8)  | Haunted Wasteland              | [view](/2023/08.rb) | ⭐⭐     |                                                                                 
-| [09](https://adventofcode.com/2023/day/9)  | Lorem Ipsum                    | [view](/2023/09.rb) |        |                                                                                 
+| [09](https://adventofcode.com/2023/day/9)  | Mirage Maintenance             | [view](/2023/09.rb) | ⭐⭐     |                                                                                 
 | [10](https://adventofcode.com/2023/day/10) | Lorem Ipsum                    | [view](/2023/10.rb) |        |                                                                                
 | [11](https://adventofcode.com/2023/day/11) | Lorem Ipsum                    | [view](/2023/11.rb) |        |                                                                                
 | [12](https://adventofcode.com/2023/day/12) | Lorem Ipsum                    | [view](/2023/12.rb) |        |                                                                                
