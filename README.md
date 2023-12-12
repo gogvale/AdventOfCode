@@ -12,7 +12,7 @@
 | [08](https://adventofcode.com/2023/day/8)  | Haunted Wasteland              | [view](/2023/08.rb) | ⭐⭐     |                                                                                 
 | [09](https://adventofcode.com/2023/day/9)  | Mirage Maintenance             | [view](/2023/09.rb) | ⭐⭐     |                                                                                 
 | [10](https://adventofcode.com/2023/day/10) | Lorem Ipsum                    | [view](/2023/10.rb) |        |                                                                                
-| [11](https://adventofcode.com/2023/day/11) | Lorem Ipsum                    | [view](/2023/11.rb) |        |                                                                                
+| [11](https://adventofcode.com/2023/day/11) | Cosmic Expansion               | [view](/2023/11.rb) |        |                                                                                
 | [12](https://adventofcode.com/2023/day/12) | Lorem Ipsum                    | [view](/2023/12.rb) |        |                                                                                
 | [13](https://adventofcode.com/2023/day/13) | Lorem Ipsum                    | [view](/2023/13.rb) |        |                                                                                
 | [14](https://adventofcode.com/2023/day/14) | Lorem Ipsum                    | [view](/2023/14.rb) |        |                                                                                
